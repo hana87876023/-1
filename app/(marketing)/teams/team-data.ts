@@ -97,7 +97,7 @@ export const teams: Team[] = [
       primary: '#FF0000',
       secondary: '#000000'
     },
-    logo: '/images/logos/wei-chuan-dragons.svg',
+    logo: '/images/logos/wei-chuan-dragons.png',
     description: '台灣職棒創始球隊，1999年解散後於2019年重返職棒。以紅色為主色調。',
     website: 'https://dragons.re/',
     championships: 4

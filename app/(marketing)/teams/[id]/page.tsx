@@ -44,16 +44,14 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
       >
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white">
-          {!team.logo.includes('wei-chuan') && (
-            <div className="relative w-40 h-40 mx-auto mb-4">
-              <Image
-                src={team.logo}
-                alt={`${team.name}のロゴ`}
-                fill
-                className="object-contain drop-shadow-2xl"
-              />
-            </div>
-          )}
+          <div className="relative w-40 h-40 mx-auto mb-4">
+            <Image
+              src={team.logo}
+              alt={`${team.name}のロゴ`}
+              fill
+              className="object-contain drop-shadow-2xl"
+            />
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-4">{team.name}</h1>
           <p className="text-xl md:text-2xl">{team.fullName}</p>
         </div>
@@ -90,7 +88,17 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
 
             <div>
               <h2 className="text-2xl font-bold mb-4 text-gray-800">球団の特色</h2>
-              <p className="text-gray-700 mb-6 leading-relaxed">{team.description}</p>
+              <div className="flex items-start gap-4 mb-6">
+                <div className="relative w-20 h-20 flex-shrink-0">
+                  <Image
+                    src={team.logo}
+                    alt={`${team.name}のロゴ`}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <p className="text-gray-700 leading-relaxed">{team.description}</p>
+              </div>
               
               <div className="mb-6">
                 <h3 className="text-lg font-semibold mb-3 text-gray-800">チームカラー</h3>
