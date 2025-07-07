@@ -9,8 +9,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }) {
-  const team = getTeamById(params.id);
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const team = getTeamById(id);
   
   if (!team) {
     return {
@@ -24,8 +25,9 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 
-export default function TeamDetailPage({ params }: { params: { id: string } }) {
-  const team = getTeamById(params.id);
+export default async function TeamDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const team = getTeamById(id);
 
   if (!team) {
     notFound();
