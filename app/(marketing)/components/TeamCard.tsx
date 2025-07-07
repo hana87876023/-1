@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Team } from '../teams/team-data';
 
 interface TeamCardProps {
@@ -16,7 +17,18 @@ export default function TeamCard({ team }: TeamCardProps) {
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20" />
-          <h3 className="text-3xl font-bold text-white z-10">{team.name}</h3>
+          {team.logo.includes('wei-chuan') ? (
+            <h3 className="text-3xl font-bold text-white z-10">{team.name}</h3>
+          ) : (
+            <div className="relative w-32 h-32 z-10">
+              <Image
+                src={team.logo}
+                alt={`${team.name}のロゴ`}
+                fill
+                className="object-contain"
+              />
+            </div>
+          )}
         </div>
         
         <div className="p-6">

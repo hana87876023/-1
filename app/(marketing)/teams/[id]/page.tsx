@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { teams, getTeamById } from '../team-data';
 import ColorSwatch from '../../components/ColorSwatch';
 
@@ -43,6 +44,16 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
       >
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white">
+          {!team.logo.includes('wei-chuan') && (
+            <div className="relative w-40 h-40 mx-auto mb-4">
+              <Image
+                src={team.logo}
+                alt={`${team.name}のロゴ`}
+                fill
+                className="object-contain drop-shadow-2xl"
+              />
+            </div>
+          )}
           <h1 className="text-5xl md:text-7xl font-bold mb-4">{team.name}</h1>
           <p className="text-xl md:text-2xl">{team.fullName}</p>
         </div>

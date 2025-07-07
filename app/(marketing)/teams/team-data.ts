@@ -29,7 +29,7 @@ export const teams: Team[] = [
       primary: '#FFD700',
       secondary: '#000000'
     },
-    logo: '/images/logos/ctbc-brothers.svg',
+    logo: '/images/logos/ctbc-brothers.png',
     description: '前身為兄弟象隊，是台灣職棒歷史最悠久的球隊之一。以黃色球衣聞名，擁有眾多忠實球迷。',
     website: 'https://www.brothers.tw/',
     championships: 7
@@ -46,7 +46,7 @@ export const teams: Team[] = [
       primary: '#8B0000',
       secondary: '#FFD700'
     },
-    logo: '/images/logos/rakuten-monkeys.svg',
+    logo: '/images/logos/rakuten-monkeys.png',
     description: '前身為La New熊、Lamigo桃猿。以創新的行銷手法和熱情的啦啦隊聞名。',
     website: 'https://monkeys.rakuten.com.tw/',
     championships: 6
@@ -63,7 +63,7 @@ export const teams: Team[] = [
       primary: '#FF6600',
       secondary: '#000080'
     },
-    logo: '/images/logos/uni-lions.svg',
+    logo: '/images/logos/uni-lions.png',
     description: '台灣職棒創始球隊之一，以橘色球衣為標誌。擁有南部廣大球迷基礎。',
     website: 'https://www.uni-lions.com.tw/',
     championships: 10
@@ -80,7 +80,7 @@ export const teams: Team[] = [
       primary: '#004B97',
       secondary: '#FFFFFF'
     },
-    logo: '/images/logos/fubon-guardians.svg',
+    logo: '/images/logos/fubon-guardians.jpg',
     description: '前身為俊國熊、興農牛、義大犀牛。2016年由富邦集團接手經營。',
     website: 'https://www.fubonguardians.com/',
     championships: 1
@@ -114,7 +114,7 @@ export const teams: Team[] = [
       primary: '#1E3A8A',
       secondary: '#F59E0B'
     },
-    logo: '/images/logos/tsg-hawks.svg',
+    logo: '/images/logos/tsg-hawks.jpg',
     description: '台灣職棒最新加入的球隊，由台灣鋼鐵集團成立。以鷹為吉祥物。',
     website: 'https://www.tsghawks.com/',
     championships: 0
