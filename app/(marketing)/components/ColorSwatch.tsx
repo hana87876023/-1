@@ -11,7 +11,7 @@ export default function ColorSwatch({ color, label }: ColorSwatchProps) {
         style={{ backgroundColor: color }}
       />
       <div>
-        <p className="text-sm font-medium text-gray-700">{label}</p>
+        <p className="text-sm font-medium text-gray-700">{label === '主色' ? 'メインカラー' : 'サブカラー'}</p>
         <p className="text-xs text-gray-500">{color}</p>
       </div>
     </div>

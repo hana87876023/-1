@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   
   if (!team) {
     return {
-      title: '球隊未找到',
+      title: '球団が見つかりません',
     };
   }
 
@@ -52,37 +52,37 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-2xl font-bold mb-4 text-gray-800">球隊資訊</h2>
+              <h2 className="text-2xl font-bold mb-4 text-gray-800">球団情報</h2>
               <dl className="space-y-3">
                 <div className="flex justify-between">
-                  <dt className="font-semibold text-gray-600">創立年份</dt>
+                  <dt className="font-semibold text-gray-600">創立年</dt>
                   <dd className="text-gray-800">{team.establishedYear}年</dd>
                 </div>
                 <div className="flex justify-between">
-                  <dt className="font-semibold text-gray-600">主場城市</dt>
+                  <dt className="font-semibold text-gray-600">ホームタウン</dt>
                   <dd className="text-gray-800">{team.homeCity}</dd>
                 </div>
                 <div className="flex justify-between">
-                  <dt className="font-semibold text-gray-600">主場球場</dt>
+                  <dt className="font-semibold text-gray-600">ホーム球場</dt>
                   <dd className="text-gray-800">{team.stadium}</dd>
                 </div>
                 <div className="flex justify-between">
-                  <dt className="font-semibold text-gray-600">球場容量</dt>
+                  <dt className="font-semibold text-gray-600">収容人数</dt>
                   <dd className="text-gray-800">{team.capacity.toLocaleString()} 人</dd>
                 </div>
                 <div className="flex justify-between">
-                  <dt className="font-semibold text-gray-600">總冠軍次數</dt>
+                  <dt className="font-semibold text-gray-600">優勝回数</dt>
                   <dd className="text-gray-800">{team.championships} 次</dd>
                 </div>
               </dl>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold mb-4 text-gray-800">球隊特色</h2>
+              <h2 className="text-2xl font-bold mb-4 text-gray-800">球団の特色</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">{team.description}</p>
               
               <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-3 text-gray-800">球隊顏色</h3>
+                <h3 className="text-lg font-semibold mb-3 text-gray-800">チームカラー</h3>
                 <div className="flex gap-4">
                   <ColorSwatch color={team.colors.primary} label="主色" />
                   <ColorSwatch color={team.colors.secondary} label="副色" />
@@ -96,7 +96,7 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
                   rel="noopener noreferrer"
                   className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 >
-                  訪問官方網站
+                  公式サイトへ
                 </a>
               )}
             </div>
@@ -108,7 +108,7 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
             href="/teams"
             className="inline-block bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors"
           >
-            返回球隊列表
+            球団一覧に戻る
           </Link>
         </div>
       </div>

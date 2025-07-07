@@ -24,15 +24,15 @@ export default function TeamCard({ team }: TeamCardProps) {
           
           <div className="space-y-2 text-sm">
             <div className="flex justify-between">
-              <span className="text-gray-500">創立年份</span>
+              <span className="text-gray-500">創立年</span>
               <span className="font-semibold">{team.establishedYear}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-500">主場</span>
+              <span className="text-gray-500">ホーム</span>
               <span className="font-semibold">{team.homeCity}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-500">總冠軍</span>
+              <span className="text-gray-500">優勝</span>
               <span className="font-semibold">{team.championships} 次</span>
             </div>
           </div>
@@ -43,16 +43,16 @@ export default function TeamCard({ team }: TeamCardProps) {
                 <div 
                   className="w-6 h-6 rounded-full border-2 border-gray-300"
                   style={{ backgroundColor: team.colors.primary }}
-                  title="主色"
+                  title="メインカラー"
                 />
                 <div 
                   className="w-6 h-6 rounded-full border-2 border-gray-300"
                   style={{ backgroundColor: team.colors.secondary }}
-                  title="副色"
+                  title="サブカラー"
                 />
               </div>
               <span className="text-blue-600 font-semibold text-sm">
-                查看詳情 →
+                詳細を見る →
               </span>
             </div>
           </div>
