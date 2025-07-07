@@ -23,10 +23,10 @@ export default function TeamsPage() {
 
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl font-bold text-black mb-4">
             全球団を知る
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-black max-w-2xl mx-auto">
             球団カードをクリックして、各チームの歴史、球場、栄光の記録などの詳細情報をご覧ください
           </p>
         </div>

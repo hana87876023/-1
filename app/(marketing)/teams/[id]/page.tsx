@@ -61,33 +61,33 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-2xl font-bold mb-4 text-gray-800">球団情報</h2>
+              <h2 className="text-2xl font-bold mb-4 text-black">球団情報</h2>
               <dl className="space-y-3">
                 <div className="flex justify-between">
-                  <dt className="font-semibold text-gray-600">創立年</dt>
-                  <dd className="text-gray-800">{team.establishedYear}年</dd>
+                  <dt className="font-semibold text-black">創立年</dt>
+                  <dd className="text-black font-medium">{team.establishedYear}年</dd>
                 </div>
                 <div className="flex justify-between">
-                  <dt className="font-semibold text-gray-600">ホームタウン</dt>
-                  <dd className="text-gray-800">{team.homeCity}</dd>
+                  <dt className="font-semibold text-black">ホームタウン</dt>
+                  <dd className="text-black font-medium">{team.homeCity}</dd>
                 </div>
                 <div className="flex justify-between">
-                  <dt className="font-semibold text-gray-600">ホーム球場</dt>
-                  <dd className="text-gray-800">{team.stadium}</dd>
+                  <dt className="font-semibold text-black">ホーム球場</dt>
+                  <dd className="text-black font-medium">{team.stadium}</dd>
                 </div>
                 <div className="flex justify-between">
-                  <dt className="font-semibold text-gray-600">収容人数</dt>
-                  <dd className="text-gray-800">{team.capacity.toLocaleString()} 人</dd>
+                  <dt className="font-semibold text-black">収容人数</dt>
+                  <dd className="text-black font-medium">{team.capacity.toLocaleString()} 人</dd>
                 </div>
                 <div className="flex justify-between">
-                  <dt className="font-semibold text-gray-600">優勝回数</dt>
-                  <dd className="text-gray-800">{team.championships} 次</dd>
+                  <dt className="font-semibold text-black">優勝回数</dt>
+                  <dd className="text-black font-medium">{team.championships} 次</dd>
                 </div>
               </dl>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold mb-4 text-gray-800">球団の特色</h2>
+              <h2 className="text-2xl font-bold mb-4 text-black">球団の特色</h2>
               <div className="flex items-start gap-4 mb-6">
                 <div className="relative w-20 h-20 flex-shrink-0">
                   <Image
@@ -97,11 +97,11 @@ export default async function TeamDetailPage({ params }: { params: Promise<{ id:
                     className="object-contain"
                   />
                 </div>
-                <p className="text-gray-700 leading-relaxed">{team.description}</p>
+                <p className="text-black leading-relaxed">{team.description}</p>
               </div>
               
               <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-3 text-gray-800">チームカラー</h3>
+                <h3 className="text-lg font-semibold mb-3 text-black">チームカラー</h3>
                 <div className="flex gap-4">
                   <ColorSwatch color={team.colors.primary} label="主色" />
                   <ColorSwatch color={team.colors.secondary} label="副色" />

@@ -28,20 +28,20 @@ export default function TeamCard({ team }: TeamCardProps) {
         </div>
         
         <div className="p-6">
-          <p className="text-gray-600 mb-4">{team.fullName}</p>
+          <p className="text-black font-medium mb-4">{team.fullName}</p>
           
           <div className="space-y-2 text-sm">
             <div className="flex justify-between">
-              <span className="text-gray-500">創立年</span>
-              <span className="font-semibold">{team.establishedYear}</span>
+              <span className="text-black font-medium">創立年</span>
+              <span className="font-bold text-black">{team.establishedYear}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-500">ホーム</span>
-              <span className="font-semibold">{team.homeCity}</span>
+              <span className="text-black font-medium">ホーム</span>
+              <span className="font-bold text-black">{team.homeCity}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-500">優勝</span>
-              <span className="font-semibold">{team.championships} 次</span>
+              <span className="text-black font-medium">優勝</span>
+              <span className="font-bold text-black">{team.championships} 次</span>
             </div>
           </div>
           
