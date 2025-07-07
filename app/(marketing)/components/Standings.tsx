@@ -130,11 +130,11 @@ export default function Standings() {
                       </div>
                     </td>
                     <td className="px-4 py-3 text-center font-semibold">{standing.wins}</td>
-                    <td className="px-4 py-3 text-center">{standing.losses}</td>
+                    <td className="px-4 py-3 text-center text-black">{standing.losses}</td>
                     <td className="px-4 py-3 text-center font-semibold">
                       .{(standing.winPercentage * 1000).toFixed(0)}
                     </td>
-                    <td className="px-4 py-3 text-center">
+                    <td className="px-4 py-3 text-center text-black">
                       {standing.gamesBehind === 0 ? '-' : standing.gamesBehind}
                     </td>
                     <td className="px-4 py-3 text-center hidden sm:table-cell">
@@ -142,7 +142,7 @@ export default function Standings() {
                         {standing.streak}
                       </span>
                     </td>
-                    <td className="px-4 py-3 text-center hidden md:table-cell text-sm">
+                    <td className="px-4 py-3 text-center hidden md:table-cell text-sm text-black">
                       {standing.lastTen}
                     </td>
                   </tr>
@@ -153,7 +153,7 @@ export default function Standings() {
         </div>
 
         <div className="mt-6 text-center">
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-black">
             ※ 2024年シーズンの仮想データです
           </p>
         </div>
