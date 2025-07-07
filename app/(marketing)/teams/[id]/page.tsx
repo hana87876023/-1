@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { teams, getTeamById } from '../team-data';
 import ColorSwatch from '../../components/ColorSwatch';
 
@@ -101,12 +102,12 @@ export default function TeamDetailPage({ params }: { params: { id: string } }) {
         </div>
 
         <div className="text-center">
-          <a 
+          <Link 
             href="/teams"
             className="inline-block bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors"
           >
             返回球隊列表
-          </a>
+          </Link>
         </div>
       </div>
     </div>
