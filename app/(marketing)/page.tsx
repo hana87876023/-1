@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import GameSchedule from './components/GameSchedule';
+import Standings from './components/Standings';
 
 export default function HomePage() {
   return (
@@ -87,6 +89,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <GameSchedule />
+      
+      <Standings />
 
       <footer className="bg-blue-900 text-white py-8">
         <div className="container mx-auto px-4 text-center">
