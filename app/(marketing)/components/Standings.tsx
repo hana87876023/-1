@@ -88,7 +88,7 @@ export default function Standings() {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+        <h2 className="text-3xl font-bold text-center mb-8 text-black">
           順位表
         </h2>
 
@@ -113,7 +113,7 @@ export default function Standings() {
 
                 return (
                   <tr key={standing.teamId} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
-                    <td className="px-4 py-3 font-bold text-lg">
+                    <td className="px-4 py-3 font-bold text-lg text-black">
                       {standing.rank}
                     </td>
                     <td className="px-4 py-3">
@@ -126,19 +126,19 @@ export default function Standings() {
                             className="object-contain"
                           />
                         </div>
-                        <span className="font-semibold">{team.name}</span>
+                        <span className="font-semibold text-black">{team.name}</span>
                       </div>
                     </td>
-                    <td className="px-4 py-3 text-center font-semibold">{standing.wins}</td>
+                    <td className="px-4 py-3 text-center font-semibold text-black">{standing.wins}</td>
                     <td className="px-4 py-3 text-center text-black">{standing.losses}</td>
-                    <td className="px-4 py-3 text-center font-semibold">
+                    <td className="px-4 py-3 text-center font-semibold text-black">
                       .{(standing.winPercentage * 1000).toFixed(0)}
                     </td>
                     <td className="px-4 py-3 text-center text-black">
                       {standing.gamesBehind === 0 ? '-' : standing.gamesBehind}
                     </td>
                     <td className="px-4 py-3 text-center hidden sm:table-cell">
-                      <span className={standing.streak.startsWith('W') ? 'text-green-600' : 'text-red-600'}>
+                      <span className={standing.streak.startsWith('W') ? 'text-green-600 font-semibold' : 'text-red-600 font-semibold'}>
                         {standing.streak}
                       </span>
                     </td>
