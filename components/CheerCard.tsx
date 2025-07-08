@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Calendar } from "lucide-react";
 import { useState } from "react";
-import type { Cheer } from "@/app/cheerleaders/cheer-data";
+import type { Cheer } from "@/app/[locale]/cheerleaders/cheer-data";
 
 interface CheerCardProps {
   cheer: Cheer;

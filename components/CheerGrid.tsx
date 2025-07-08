@@ -1,7 +1,7 @@
 "use client";
 
 import { CheerCard } from "./CheerCard";
-import type { Cheer } from "@/app/cheerleaders/cheer-data";
+import type { Cheer } from "@/app/[locale]/cheerleaders/cheer-data";
 import { motion } from "framer-motion";
 
 interface CheerGridProps {
