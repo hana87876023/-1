@@ -41,13 +41,19 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              About Taiwan Cheerleaders
+              About Taiwan Baseball
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
               台湾プロ野球（CPBL）の各球団には、試合を盛り上げる専属のチアリーダーチームがあります。
               彼女たちはダンスパフォーマンスだけでなく、SNSでの発信やファンとの交流を通じて、
               台湾野球文化の重要な一部となっています。
             </p>
+            <Link href="/teams">
+              <Button size="lg" variant="outline">
+                球団紹介を見る
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
