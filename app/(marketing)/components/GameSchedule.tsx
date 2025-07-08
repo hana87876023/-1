@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import Image from 'next/image';
 import { teams } from '../teams/team-data';
 
 interface Game {
@@ -343,7 +342,7 @@ export default function GameSchedule() {
                     <p className="text-sm font-semibold mb-1">{date.getDate()}</p>
                     {games.length > 0 && (
                       <div className="space-y-1">
-                        {games.slice(0, 2).map((game, index) => {
+                        {games.slice(0, 2).map((game) => {
                           const homeTeam = getTeamById(game.homeTeam);
                           const awayTeam = getTeamById(game.awayTeam);
                           if (!homeTeam || !awayTeam) return null;
