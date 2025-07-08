@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export default function HomePage() {
-  const featuredCheerleaders = cheerleaders.slice(0, 6);
+  const featuredCheerleaders = cheerleaders.slice(0, 5);
 
   return (
     <>
