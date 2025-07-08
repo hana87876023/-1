@@ -8,7 +8,7 @@ import { Calendar, Users } from "lucide-react";
 import type { Metadata } from "next";
 
 interface PageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 export async function generateStaticParams() {
@@ -18,7 +18,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const cheer = cheerleaders.find((c) => c.id === params.id);
+  const { id } = await params;
+  const cheer = cheerleaders.find((c) => c.id === id);
   
   if (!cheer) {
     return {
@@ -37,8 +38,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default function CheerleaderDetailPage({ params }: PageProps) {
-  const cheer = cheerleaders.find((c) => c.id === params.id);
+export default async function CheerleaderDetailPage({ params }: PageProps) {
+  const { id } = await params;
+  const cheer = cheerleaders.find((c) => c.id === id);
 
   if (!cheer) {
     notFound();
