@@ -275,29 +275,9 @@ export default function GameSchedule() {
                               className="bg-gray-50 rounded p-2 text-xs cursor-pointer hover:bg-gray-100 transition-colors"
                             >
                               <p className="font-semibold">{game.time}</p>
-                              <div className="flex items-center justify-between gap-1">
-                                <div className="flex items-center gap-1">
-                                  <div className="relative w-3 h-3">
-                                    <img 
-                                      src={awayTeam.logo} 
-                                      alt={awayTeam.name}
-                                      className="w-full h-full object-contain"
-                                    />
-                                  </div>
-                                  <span className="text-xs truncate">{awayTeam.name}</span>
-                                </div>
-                                <span className="text-xs">vs</span>
-                                <div className="flex items-center gap-1">
-                                  <div className="relative w-3 h-3">
-                                    <img 
-                                      src={homeTeam.logo} 
-                                      alt={homeTeam.name}
-                                      className="w-full h-full object-contain"
-                                    />
-                                  </div>
-                                  <span className="text-xs truncate">{homeTeam.name}</span>
-                                </div>
-                              </div>
+                              <p className="truncate">
+                                {awayTeam.name} vs {homeTeam.name}
+                              </p>
                               {game.status === 'finished' && game.score && (
                                 <p className="text-gray-600">
                                   {game.score.away} - {game.score.home}
@@ -373,26 +353,7 @@ export default function GameSchedule() {
                               className="text-xs bg-blue-100 rounded px-1 py-0.5 cursor-pointer hover:bg-blue-200"
                               title={`${game.time} ${awayTeam.name} vs ${homeTeam.name}`}
                             >
-                              <div className="flex items-center justify-between mb-1">
-                                <span className="font-semibold">{game.time}</span>
-                              </div>
-                              <div className="flex items-center justify-center gap-1">
-                                <div className="relative w-2 h-2">
-                                  <img 
-                                    src={awayTeam.logo} 
-                                    alt={awayTeam.name}
-                                    className="w-full h-full object-contain"
-                                  />
-                                </div>
-                                <span className="text-xs">vs</span>
-                                <div className="relative w-2 h-2">
-                                  <img 
-                                    src={homeTeam.logo} 
-                                    alt={homeTeam.name}
-                                    className="w-full h-full object-contain"
-                                  />
-                                </div>
-                              </div>
+                              {game.time}
                             </div>
                           );
                         })}
