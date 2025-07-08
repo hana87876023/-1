@@ -93,7 +93,7 @@ export default function Standings() {
         </h2>
 
         <div className="overflow-x-auto">
-          <table className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+          <table className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden">
             <thead className="bg-blue-900 text-white">
               <tr>
                 <th className="px-4 py-3 text-left">順位</th>
@@ -112,7 +112,7 @@ export default function Standings() {
                 if (!team) return null;
 
                 return (
-                  <tr key={standing.teamId} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                  <tr key={standing.teamId} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
                     <td className="px-4 py-3 font-bold text-lg text-black">
                       {standing.rank}
                     </td>
@@ -130,11 +130,11 @@ export default function Standings() {
                       </div>
                     </td>
                     <td className="px-4 py-3 text-center font-semibold text-black">{standing.wins}</td>
-                    <td className="px-4 py-3 text-center text-black">{standing.losses}</td>
+                    <td className="px-4 py-3 text-center font-semibold text-black">{standing.losses}</td>
                     <td className="px-4 py-3 text-center font-semibold text-black">
                       .{(standing.winPercentage * 1000).toFixed(0)}
                     </td>
-                    <td className="px-4 py-3 text-center text-black">
+                    <td className="px-4 py-3 text-center font-semibold text-black">
                       {standing.gamesBehind === 0 ? '-' : standing.gamesBehind}
                     </td>
                     <td className="px-4 py-3 text-center hidden sm:table-cell">
@@ -142,7 +142,7 @@ export default function Standings() {
                         {standing.streak}
                       </span>
                     </td>
-                    <td className="px-4 py-3 text-center hidden md:table-cell text-sm text-black">
+                    <td className="px-4 py-3 text-center hidden md:table-cell text-sm font-semibold text-black">
                       {standing.lastTen}
                     </td>
                   </tr>
