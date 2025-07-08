@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
-import { teams } from '../teams/team-data';
+import { teams } from '../(marketing)/teams/team-data';
 
 interface Game {
   id: string;

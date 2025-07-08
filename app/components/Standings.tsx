@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { teams } from '../teams/team-data';
+import { teams } from '../(marketing)/teams/team-data';
 
 interface TeamStanding {
   teamId: string;
