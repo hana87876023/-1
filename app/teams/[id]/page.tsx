@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { teams, getTeamById } from '../../(marketing)/teams/team-data';
-import ColorSwatch from '../../(marketing)/components/ColorSwatch';
+import { teams, getTeamById } from '../team-data';
+import ColorSwatch from '@/components/ColorSwatch';
 
 export async function generateStaticParams() {
   return teams.map((team) => ({

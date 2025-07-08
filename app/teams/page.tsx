@@ -1,5 +1,5 @@
-import { teams } from './(marketing)/teams/team-data';
-import TeamGrid from './(marketing)/components/TeamGrid';
+import { teams } from './team-data';
+import TeamGrid from '@/components/TeamGrid';
 
 export const metadata = {
   title: '台灣職棒球隊 | CPBL Teams',

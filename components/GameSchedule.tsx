@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { teams } from '../teams/team-data';
+import { teams } from '../app/teams/team-data';
 
 interface Game {
   id: string;

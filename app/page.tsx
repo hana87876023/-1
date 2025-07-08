@@ -1,8 +1,8 @@
 import { CheerHero } from "@/components/CheerHero";
 import { CheerGrid } from "@/components/CheerGrid";
 import { cheerleaders } from "./cheerleaders/cheer-data";
-import GameSchedule from './(marketing)/components/GameSchedule';
-import Standings from './(marketing)/components/Standings';
+import GameSchedule from '@/components/GameSchedule';
+import Standings from '@/components/Standings';
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";

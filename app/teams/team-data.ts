@@ -2,130 +2,125 @@ export interface Team {
   id: string;
   name: string;
   fullName: string;
-  establishedYear: number;
-  homeCity: string;
-  stadium: string;
-  capacity: number;
+  logo: string;
   colors: {
     primary: string;
     secondary: string;
   };
-  logo: string;
+  establishedYear: number;
+  homeCity: string;
+  stadium: string;
+  capacity: number;
+  championships: number;
   description: string;
   website?: string;
-  championships: number;
 }
 
 export const teams: Team[] = [
   {
     id: 'ctbc-brothers',
     name: '中信兄弟',
-    fullName: '中信兄弟棒球隊',
-    establishedYear: 1990,
-    homeCity: '台中',
+    fullName: '中信兄弟象',
+    logo: '/images/teams/brothers-logo.png',
+    colors: {
+      primary: '#F9D400',
+      secondary: '#003876'
+    },
+    establishedYear: 1984,
+    homeCity: '台中市',
     stadium: '台中洲際棒球場',
     capacity: 20000,
-    colors: {
-      primary: '#FFD700',
-      secondary: '#000000'
-    },
-    logo: '/images/logos/ctbc-brothers.png',
-    description: '前身為兄弟象隊，是台灣職棒歷史最悠久的球隊之一。以黃色球衣聞名，擁有眾多忠實球迷。',
-    website: 'https://www.brothers.tw/',
-    championships: 7
-  },
-  {
-    id: 'rakuten-monkeys',
-    name: '樂天桃猿',
-    fullName: '樂天桃猿棒球隊',
-    establishedYear: 2003,
-    homeCity: '桃園',
-    stadium: '桃園國際棒球場',
-    capacity: 20000,
-    colors: {
-      primary: '#8B0000',
-      secondary: '#FFD700'
-    },
-    logo: '/images/logos/rakuten-monkeys.png',
-    description: '前身為La New熊、Lamigo桃猿。以創新的行銷手法和熱情的啦啦隊聞名。',
-    website: 'https://monkeys.rakuten.com.tw/',
-    championships: 6
-  },
-  {
-    id: 'uni-lions',
-    name: '統一7-ELEVEn獅',
-    fullName: '統一7-ELEVEn獅棒球隊',
-    establishedYear: 1990,
-    homeCity: '台南',
-    stadium: '台南市立棒球場',
-    capacity: 12000,
-    colors: {
-      primary: '#FF6600',
-      secondary: '#000080'
-    },
-    logo: '/images/logos/uni-lions.png',
-    description: '台灣職棒創始球隊之一，以橘色球衣為標誌。擁有南部廣大球迷基礎。',
-    website: 'https://www.uni-lions.com.tw/',
-    championships: 10
+    championships: 7,
+    description: '台湾プロ野球界の名門チーム。黄色いユニフォームがトレードマークで、熱狂的なファンが多いことで知られています。長い歴史と伝統を持ち、数多くの名選手を輩出してきました。',
+    website: 'https://www.brothers.tw'
   },
   {
     id: 'fubon-guardians',
     name: '富邦悍將',
-    fullName: '富邦悍將棒球隊',
-    establishedYear: 1993,
-    homeCity: '新北',
-    stadium: '新莊棒球場',
-    capacity: 12500,
+    fullName: '富邦悍將',
+    logo: '/images/teams/guardians-logo.png',
     colors: {
-      primary: '#004B97',
+      primary: '#003876',
       secondary: '#FFFFFF'
     },
-    logo: '/images/logos/fubon-guardians.jpg',
-    description: '前身為俊國熊、興農牛、義大犀牛。2016年由富邦集團接手經營。',
-    website: 'https://www.fubonguardians.com/',
-    championships: 1
+    establishedYear: 1993,
+    homeCity: '新北市',
+    stadium: '新莊棒球場',
+    capacity: 12500,
+    championships: 2,
+    description: '青色をチームカラーとする台北地区の代表チーム。富邦金融グループが親会社で、近年積極的に戦力補強を行っています。守備力の高さで知られています。',
+    website: 'https://www.fubon-guardians.com'
+  },
+  {
+    id: 'rakuten-monkeys',
+    name: '樂天桃猿',
+    fullName: '樂天桃猿',
+    logo: '/images/teams/monkeys-logo.png',
+    colors: {
+      primary: '#B90C14',
+      secondary: '#FFFFFF'
+    },
+    establishedYear: 1993,
+    homeCity: '桃園市',
+    stadium: '桃園國際棒球場',
+    capacity: 20000,
+    championships: 4,
+    description: '桃園を本拠地とする赤いユニフォームが印象的なチーム。日本の楽天グループが親会社となってから、国際的な視野でチーム運営を行っています。攻撃力の高さが特徴です。',
+    website: 'https://www.rakutenmonkeys.com'
+  },
+  {
+    id: 'uni-lions',
+    name: '統一7-ELEVEn獅',
+    fullName: '統一7-ELEVEn獅',
+    logo: '/images/teams/lions-logo.png',
+    colors: {
+      primary: '#FF6600',
+      secondary: '#000000'
+    },
+    establishedYear: 1989,
+    homeCity: '台南市',
+    stadium: '台南市立棒球場',
+    capacity: 12000,
+    championships: 8,
+    description: 'オレンジ色のユニフォームが特徴的な南部の強豪チーム。台湾プロ野球の歴史と共に歩んできた老舗チームで、多くの優勝経験があります。堅実な野球スタイルで知られています。',
+    website: 'https://www.uni-lions.com.tw'
   },
   {
     id: 'wei-chuan-dragons',
     name: '味全龍',
-    fullName: '味全龍棒球隊',
-    establishedYear: 1990,
-    homeCity: '台北',
-    stadium: '天母棒球場',
-    capacity: 10000,
+    fullName: '味全龍',
+    logo: '/images/teams/dragons-logo.png',
     colors: {
-      primary: '#FF0000',
-      secondary: '#000000'
+      primary: '#C8102E',
+      secondary: '#FFFFFF'
     },
-    logo: '/images/logos/wei-chuan-dragons.png',
-    description: '台灣職棒創始球隊，1999年解散後於2019年重返職棒。以紅色為主色調。',
-    website: 'https://dragons.re/',
-    championships: 4
+    establishedYear: 1989,
+    homeCity: '台北市',
+    stadium: '天母棒球場',
+    capacity: 12500,
+    championships: 3,
+    description: '赤いドラゴンがシンボルの台北のチーム。一時期リーグを離脱していましたが、2019年に復帰。新しい世代の選手たちと共に、かつての栄光を取り戻そうと奮闘しています。',
+    website: 'https://www.weichuandragons.com'
   },
   {
     id: 'tsg-hawks',
-    name: '台鋼雄鷹',
-    fullName: '台鋼雄鷹棒球隊',
-    establishedYear: 2024,
-    homeCity: '高雄',
-    stadium: '澄清湖棒球場',
-    capacity: 20000,
+    name: 'TSG鷹',
+    fullName: 'TSG鷹',
+    logo: '/images/teams/hawks-logo.png',
     colors: {
-      primary: '#1E3A8A',
-      secondary: '#F59E0B'
+      primary: '#1C1C1C',
+      secondary: '#FFD700'
     },
-    logo: '/images/logos/tsg-hawks.jpg',
-    description: '台灣職棒最新加入的球隊，由台灣鋼鐵集團成立。以鷹為吉祥物。',
-    website: 'https://www.tsghawks.com/',
-    championships: 0
+    establishedYear: 2019,
+    homeCity: '台中市',
+    stadium: '台中洲際棒球場',
+    capacity: 20000,
+    championships: 0,
+    description: '黒と金色のユニフォームが印象的な比較的新しいチーム。台湾スポーツグループが運営し、若い選手の育成に力を入れています。これからの成長が期待される新興勢力です。',
+    website: 'https://www.tsg-hawks.com'
   }
 ];
 
-export function getTeamById(id: string): Team | undefined {
+export const getTeamById = (id: string): Team | undefined => {
   return teams.find(team => team.id === id);
-}
-
-export function getTeamColor(id: string): { primary: string; secondary: string } | undefined {
-  const team = getTeamById(id);
-  return team?.colors;
-}
+};
