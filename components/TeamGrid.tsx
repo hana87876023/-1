@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Team } from '../app/teams/team-data';
+import { Team } from '../app/[locale]/teams/team-data';
 
 interface TeamGridProps {
   teams: Team[];

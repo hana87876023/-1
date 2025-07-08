@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "ホーム",
+    "cheerleaders": "チアリーダー",
+    "teams": "球団",
+    "language": "言語",
+    "taiwan": "台湾",
+    "japanese": "日本語",
+    "chinese": "中文"
+  },
+  "home": {
+    "hero": {
+      "title": "台湾プロ野球チアリーダー",
+      "subtitle": "台湾のプロ野球を彩る美しきチアリーダーたち",
+      "description": "CPBLで活躍するチアリーダーの魅力をお届けします"
+    },
+    "featured": {
+      "title": "Featured Cheerleaders",
+      "description": "台湾プロ野球で活躍する人気チアリーダーたちをご紹介します",
+      "viewAll": "View All Cheerleaders"
+    },
+    "about": {
+      "title": "About Taiwan Baseball",
+      "description": "台湾プロ野球（CPBL）の各球団には、試合を盛り上げる専属のチアリーダーチームがあります。彼女たちはダンスパフォーマンスだけでなく、SNSでの発信やファンとの交流を通じて、台湾野球文化の重要な一部となっています。",
+      "viewTeams": "球団紹介を見る"
+    },
+    "footer": {
+      "copyright": "© 2024 Taiwan Cheerleaders & CPBL Info",
+      "description": "台湾プロ野球チアリーダーと試合情報を紹介するファンサイト"
+    }
+  },
+  "cheerleaders": {
+    "title": "チアリーダー",
+    "allCheerleaders": "全チアリーダー",
+    "description": "台湾プロ野球で活躍するチアリーダーたちをご紹介",
+    "teamFilter": "チーム別"
+  },
+  "teams": {
+    "title": "台灣職棒球隊",
+    "subtitle": "CPBL Teams",
+    "description": "探索台灣職業棒球大聯盟（CPBL）的所有球隊，了解各隊歷史、主場、成就等資訊。",
+    "intro": "中華職業棒球大聯盟（CPBL）成立於1989年，是台灣最高層級的職業棒球聯盟。目前共有6支球隊，分布於台灣各地。",
+    "allTeams": "全球団を知る",
+    "teamInfo": "球団情報",
+    "established": "創立年",
+    "homeCity": "ホームタウン",
+    "stadium": "ホーム球場",
+    "capacity": "収容人数",
+    "championships": "優勝回数",
+    "teamColors": "チームカラー",
+    "primaryColor": "主色",
+    "secondaryColor": "副色",
+    "officialSite": "公式サイトへ",
+    "backToTeams": "球団一覧に戻る"
+  },
+  "schedule": {
+    "title": "試合予定",
+    "noGames": "本日の試合はありません"
+  },
+  "standings": {
+    "title": "順位表",
+    "team": "チーム",
+    "wins": "勝",
+    "losses": "敗",
+    "pct": "勝率"
+  }
+}

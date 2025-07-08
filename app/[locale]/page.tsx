@@ -6,8 +6,10 @@ import Standings from '@/components/Standings';
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
-export default function HomePage() {
+export default function HomePage({ params: { locale } }: { params: { locale: string } }) {
+  const t = useTranslations('home');
   const featuredCheerleaders = cheerleaders.slice(0, 5);
 
   return (
@@ -18,19 +20,19 @@ export default function HomePage() {
       <section className="container mx-auto px-4 py-12 md:py-20">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Featured Cheerleaders
+            {t('featured.title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            台湾プロ野球で活躍する人気チアリーダーたちをご紹介します
+            {t('featured.description')}
           </p>
         </div>
         
         <CheerGrid cheerleaders={featuredCheerleaders} />
         
         <div className="text-center mt-12">
-          <Link href="/cheerleaders">
+          <Link href={`/${locale}/cheerleaders`}>
             <Button size="lg" variant="outline">
-              View All Cheerleaders
+              {t('featured.viewAll')}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
@@ -41,16 +43,14 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              About Taiwan Baseball
+              {t('about.title')}
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              台湾プロ野球（CPBL）の各球団には、試合を盛り上げる専属のチアリーダーチームがあります。
-              彼女たちはダンスパフォーマンスだけでなく、SNSでの発信やファンとの交流を通じて、
-              台湾野球文化の重要な一部となっています。
+              {t('about.description')}
             </p>
-            <Link href="/teams">
+            <Link href={`/${locale}/teams`}>
               <Button size="lg" variant="outline">
-                球団紹介を見る
+                {t('about.viewTeams')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -66,9 +66,9 @@ export default function HomePage() {
 
       <footer className="bg-blue-900 text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p className="mb-2">© 2024 Taiwan Cheerleaders & CPBL Info</p>
+          <p className="mb-2">{t('footer.copyright')}</p>
           <p className="text-blue-300 text-sm">
-            台湾プロ野球チアリーダーと試合情報を紹介するファンサイト
+            {t('footer.description')}
           </p>
         </div>
       </footer>

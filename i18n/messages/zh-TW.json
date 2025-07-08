@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "首頁",
+    "cheerleaders": "啦啦隊",
+    "teams": "球隊",
+    "language": "語言",
+    "taiwan": "台灣",
+    "japanese": "日本語",
+    "chinese": "中文"
+  },
+  "home": {
+    "hero": {
+      "title": "台灣職棒啦啦隊",
+      "subtitle": "為台灣職棒增添光彩的美麗啦啦隊員",
+      "description": "為您呈現CPBL活躍的啦啦隊魅力"
+    },
+    "featured": {
+      "title": "精選啦啦隊員",
+      "description": "為您介紹在台灣職棒中活躍的人氣啦啦隊員們",
+      "viewAll": "查看所有啦啦隊員"
+    },
+    "about": {
+      "title": "關於台灣棒球",
+      "description": "台灣職業棒球大聯盟（CPBL）的各球團都有專屬的啦啦隊團隊來為比賽加油。她們不僅透過舞蹈表演，還透過社群媒體發文和與球迷互動，成為台灣棒球文化的重要一部分。",
+      "viewTeams": "查看球團介紹"
+    },
+    "footer": {
+      "copyright": "© 2024 台灣啦啦隊與CPBL資訊",
+      "description": "介紹台灣職棒啦啦隊與比賽資訊的球迷網站"
+    }
+  },
+  "cheerleaders": {
+    "title": "啦啦隊員",
+    "allCheerleaders": "所有啦啦隊員",
+    "description": "為您介紹在台灣職棒中活躍的啦啦隊員們",
+    "teamFilter": "依球隊分類"
+  },
+  "teams": {
+    "title": "台灣職棒球隊",
+    "subtitle": "CPBL球隊",
+    "description": "探索台灣職業棒球大聯盟（CPBL）的所有球隊，了解各隊歷史、主場、成就等資訊。",
+    "intro": "中華職業棒球大聯盟（CPBL）成立於1989年，是台灣最高層級的職業棒球聯盟。目前共有6支球隊，分布於台灣各地。",
+    "allTeams": "認識所有球團",
+    "teamInfo": "球團資訊",
+    "established": "創立年份",
+    "homeCity": "主場城市",
+    "stadium": "主場球場",
+    "capacity": "容納人數",
+    "championships": "冠軍次數",
+    "teamColors": "球隊色彩",
+    "primaryColor": "主要色彩",
+    "secondaryColor": "次要色彩",
+    "officialSite": "前往官方網站",
+    "backToTeams": "返回球隊列表"
+  },
+  "schedule": {
+    "title": "賽程表",
+    "noGames": "今日無比賽"
+  },
+  "standings": {
+    "title": "排行榜",
+    "team": "球隊",
+    "wins": "勝",
+    "losses": "敗",
+    "pct": "勝率"
+  }
+}
