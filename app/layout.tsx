@@ -1,33 +1,37 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "台灣職棒球隊 | CPBL Teams",
-  description: "探索台灣職業棒球大聯盟（CPBL）的所有球隊，了解各隊歷史、主場、成就等資訊。",
+  title: "Taiwan Cheerleaders | 台湾プロ野球チアリーダー紹介",
+  description: "台湾プロ野球の人気チアリーダーを紹介。楽天モンキーズ、中信ブラザーズなど各球団の応援団メンバープロフィール。",
+  keywords: ["台湾", "チアリーダー", "プロ野球", "楽天モンキーズ", "中信ブラザーズ"],
+  openGraph: {
+    title: "Taiwan Cheerleaders",
+    description: "台湾プロ野球チアリーダー紹介サイト",
+    images: ["/og-image.png"],
+    locale: "ja_JP",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="zh-TW">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="ja">
+      <body className={notoSansJP.className}>
+        <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+          {children}
+        </main>
       </body>
     </html>
   );
