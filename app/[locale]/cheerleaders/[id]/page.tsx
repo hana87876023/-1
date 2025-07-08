@@ -6,9 +6,10 @@ import { SocialIcons } from "@/components/SocialIcons";
 import { Separator } from "@/components/ui/separator";
 import { Calendar, Users } from "lucide-react";
 import type { Metadata } from "next";
+import { setRequestLocale } from 'next-intl/server';
 
 interface PageProps {
-  params: Promise<{ id: string }>;
+  params: Promise<{ id: string; locale: string }>;
 }
 
 export async function generateStaticParams() {
@@ -39,7 +40,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function CheerleaderDetailPage({ params }: PageProps) {
-  const { id } = await params;
+  const { id, locale } = await params;
+  setRequestLocale(locale);
   const cheer = cheerleaders.find((c) => c.id === id);
 
   if (!cheer) {

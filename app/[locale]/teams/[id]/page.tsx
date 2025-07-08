@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { teams, getTeamById } from '../team-data';
 import ColorSwatch from '@/components/ColorSwatch';
+import { setRequestLocale } from 'next-intl/server';
 
 export async function generateStaticParams() {
   return teams.map((team) => ({
@@ -10,7 +11,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ id: string; locale: string }> }) {
   const { id } = await params;
   const team = getTeamById(id);
   
@@ -26,8 +27,9 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
-export default async function TeamDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+export default async function TeamDetailPage({ params }: { params: Promise<{ id: string; locale: string }> }) {
+  const { id, locale } = await params;
+  setRequestLocale(locale);
   const team = getTeamById(id);
 
   if (!team) {

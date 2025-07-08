@@ -1,12 +1,15 @@
 import { teams } from './team-data';
 import TeamGrid from '@/components/TeamGrid';
+import { setRequestLocale } from 'next-intl/server';
 
 export const metadata = {
   title: '台灣職棒球隊 | CPBL Teams',
   description: '探索台灣職業棒球大聯盟（CPBL）的所有球隊，了解各隊歷史、主場、成就等資訊。',
 };
 
-export default function TeamsPage() {
+export default async function TeamsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
