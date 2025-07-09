@@ -21,7 +21,7 @@ export const teams: Team[] = [
     id: 'ctbc-brothers',
     name: '中信兄弟',
     fullName: '中信兄弟象',
-    logo: '/images/logos/cfe0ce34-92d4-43ee-b282-ac8aa9f4c7e1.png',
+    logo: '/images/logos/2b5b9385-95a2-408d-ad1a-6dd06d7bd58c.png',
     colors: {
       primary: '#F9D400',
       secondary: '#003876'
@@ -104,9 +104,9 @@ export const teams: Team[] = [
   },
   {
     id: 'tsg-hawks',
-    name: 'TSG鷹',
-    fullName: 'TSG鷹',
-    logo: '/images/logos/2b5b9385-95a2-408d-ad1a-6dd06d7bd58c.png',
+    name: '台鋼雄鷹',
+    fullName: '台鋼雄鷹',
+    logo: '/images/logos/cfe0ce34-92d4-43ee-b282-ac8aa9f4c7e1.png',
     colors: {
       primary: '#1C1C1C',
       secondary: '#FFD700'
