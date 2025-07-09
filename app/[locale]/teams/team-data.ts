@@ -72,7 +72,7 @@ export const teams: Team[] = [
     id: 'uni-lions',
     name: '統一7-ELEVEn獅',
     fullName: '統一7-ELEVEn獅',
-    logo: '/images/logos/27caf259-349c-41f1-bf48-60774e0af1bd.png',
+    logo: '/images/logos/2dc5b4f3-d375-46a5-bbea-b6d754c4fae9.png',
     colors: {
       primary: '#FF6600',
       secondary: '#000000'
@@ -89,7 +89,7 @@ export const teams: Team[] = [
     id: 'wei-chuan-dragons',
     name: '味全龍',
     fullName: '味全龍',
-    logo: '/images/logos/2dc5b4f3-d375-46a5-bbea-b6d754c4fae9.png',
+    logo: '/images/logos/27caf259-349c-41f1-bf48-60774e0af1bd.png',
     colors: {
       primary: '#C8102E',
       secondary: '#FFFFFF'
