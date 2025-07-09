@@ -9,12 +9,12 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Taiwan Cheerleaders | 台湾プロ野球チアリーダー紹介",
-  description: "台湾プロ野球の人気チアリーダーを紹介。楽天モンキーズ、中信ブラザーズなど各球団の応援団メンバープロフィール。",
-  keywords: ["台湾", "チアリーダー", "プロ野球", "楽天モンキーズ", "中信ブラザーズ"],
+  title: "Taiwan Baseball | 台湾野球・球団紹介",
+  description: "台湾プロ野球の各球団を紹介。楽天モンキーズ、中信ブラザーズなど人気球団の情報とチアリーダーのプロフィール。",
+  keywords: ["台湾", "野球", "球団", "プロ野球", "楽天モンキーズ", "中信ブラザーズ"],
   openGraph: {
-    title: "Taiwan Cheerleaders",
-    description: "台湾プロ野球チアリーダー紹介サイト",
+    title: "Taiwan Baseball",
+    description: "台湾野球・球団紹介サイト",
     images: ["/og-image.png"],
     locale: "ja_JP",
     type: "website",

@@ -12,7 +12,7 @@ export function CheerHero() {
       {/* 複数の背景画像でよりダイナミックに */}
       <div className="absolute inset-0">
         <Image
-          src="/images/logos/images (1).jpg"
+          src="/images/logos/baseball-stadium-bg.jpg"
           alt="Taiwan Baseball Stadium"
           fill
           priority
@@ -38,10 +38,10 @@ export function CheerHero() {
           className="text-center text-white px-4"
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-2xl">
-            Taiwan Cheerleaders
+            Taiwan Baseball Teams
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-lg">
-            台湾プロ野球を彩る人気チアリーダーたちを紹介
+            台湾のプロ野球団について紹介
           </p>
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
