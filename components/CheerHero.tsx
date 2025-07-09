@@ -12,7 +12,7 @@ export function CheerHero() {
       {/* 複数の背景画像でよりダイナミックに */}
       <div className="absolute inset-0">
         <Image
-          src="/images/ballpark-hero.jpg"
+          src="/images/logos/images (1).jpg"
           alt="Taiwan Baseball Stadium"
           fill
           priority
