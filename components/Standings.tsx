@@ -118,12 +118,13 @@ export default function Standings() {
                     </td>
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-3">
-                        <div className="relative w-8 h-8">
+                        <div className="relative w-10 h-10">
                           <Image
                             src={team.logo}
                             alt={team.name}
                             fill
-                            className="object-contain"
+                            className="object-contain drop-shadow-sm"
+                            priority
                           />
                         </div>
                         <span className="font-semibold text-black">{team.name}</span>
