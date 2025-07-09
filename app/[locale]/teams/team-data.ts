@@ -21,7 +21,7 @@ export const teams: Team[] = [
     id: 'ctbc-brothers',
     name: '中信兄弟',
     fullName: '中信兄弟象',
-    logo: '/logos/brothers-logo.png',
+    logo: '/images/logos/cfe0ce34-92d4-43ee-b282-ac8aa9f4c7e1.png',
     colors: {
       primary: '#F9D400',
       secondary: '#003876'
@@ -38,7 +38,7 @@ export const teams: Team[] = [
     id: 'fubon-guardians',
     name: '富邦悍將',
     fullName: '富邦悍將',
-    logo: '/logos/guardians-logo.png',
+    logo: '/images/logos/4756903a-d738-4082-8c68-3b03d251a83e.png',
     colors: {
       primary: '#003876',
       secondary: '#FFFFFF'
@@ -55,7 +55,7 @@ export const teams: Team[] = [
     id: 'rakuten-monkeys',
     name: '樂天桃猿',
     fullName: '樂天桃猿',
-    logo: '/logos/monkeys-logo.png',
+    logo: '/images/logos/2743b40c-31a9-4d1c-9bd3-a27da6e02608.png',
     colors: {
       primary: '#B90C14',
       secondary: '#FFFFFF'
@@ -72,7 +72,7 @@ export const teams: Team[] = [
     id: 'uni-lions',
     name: '統一7-ELEVEn獅',
     fullName: '統一7-ELEVEn獅',
-    logo: '/logos/lions-logo.png',
+    logo: '/images/logos/27caf259-349c-41f1-bf48-60774e0af1bd.png',
     colors: {
       primary: '#FF6600',
       secondary: '#000000'
@@ -89,7 +89,7 @@ export const teams: Team[] = [
     id: 'wei-chuan-dragons',
     name: '味全龍',
     fullName: '味全龍',
-    logo: '/logos/dragons-logo.png',
+    logo: '/images/logos/2dc5b4f3-d375-46a5-bbea-b6d754c4fae9.png',
     colors: {
       primary: '#C8102E',
       secondary: '#FFFFFF'
@@ -106,7 +106,7 @@ export const teams: Team[] = [
     id: 'tsg-hawks',
     name: 'TSG鷹',
     fullName: 'TSG鷹',
-    logo: '/logos/hawks-logo.png',
+    logo: '/images/logos/2b5b9385-95a2-408d-ad1a-6dd06d7bd58c.png',
     colors: {
       primary: '#1C1C1C',
       secondary: '#FFD700'
